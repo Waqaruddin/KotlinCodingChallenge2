@@ -1,0 +1,1 @@
+//Find 10 biggest number in the array(not sorting)

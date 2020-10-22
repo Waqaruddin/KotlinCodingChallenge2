@@ -2,15 +2,22 @@
 
 fun main() {
 
-    val integers = arrayOf(1, 2, 3, 4, 4, 5, 1)
+    val arr = arrayOf(1, 2, 3, 4, 4, 4, 5, 1)
 
-    for (i in 0 until integers.size - 1) {
-        for (j in i + 1 until integers.size) {
-            if (integers[i] == integers[j] && i != j) {
-                println("Duplicate:" + integers[j])
+    for (i in 0 until arr.size-1) {
+        var count = 0
+
+        for (j in i+1 until arr.size) {
+            if (arr[i] == arr[j] && i != j) {
+                count++
             }
         }
+        if(count == 1){
+            println(arr[i])
+        }
+
     }
+
 
 
 }
