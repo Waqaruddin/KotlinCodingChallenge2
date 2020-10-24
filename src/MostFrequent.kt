@@ -3,12 +3,10 @@
 fun main(){
     var arr = intArrayOf(1,2,2,3,3,3)
 
-   // println(getPopularElement(arr))
-
-    var hashMap = HashMap<Int,Int>()
+    var hashMap = HashMap<String,Int>()
 
     for (i in arr){
-        hashMap[i] = (hashMap.getOrDefault(i , 0)) + 1
+        hashMap[i.toString()] = (hashMap.getOrDefault(i.toString() , 0)) + 1
     }
 
     println(hashMap.maxBy{it.value})
