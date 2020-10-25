@@ -11,11 +11,13 @@ fun main() {
             list.add(str1.substring(i, j))
         }
     }
-    if(list.contains(str2)){
+    if (list.contains(str2)) {
         println("Yes")
-    }else{
+    } else {
         println("No")
     }
 
 
 }
+
+

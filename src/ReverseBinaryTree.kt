@@ -7,6 +7,7 @@ data class Node(
         var right:Node? = null
 )
 
+
 fun reversePrint(root:Node){
     if(root.right != null){
         reversePrint(root.right!!)
@@ -19,17 +20,25 @@ fun reversePrint(root:Node){
 }
 
 fun main(){
-   val root = Node(1)
-    root.value = 1
-    root.left!!.value = 2
-    root.right!!.value = 3
-    root.left!!.left!!.value = 4
-    root.right!!.left!!.value = 5
-    root.right!!.right!!.value = 6
+
+   val ten = Node(10)
+    val five = Node(5)
+    val six = Node(6)
+    val four = Node(4)
+    val fifteen = Node(15)
+    val twelve = Node(12)
+    val twenty = Node(20)
+
+    ten.left = five
+    five.left = four
+    five.right = six
+    ten.right = fifteen
+    fifteen.left = twelve
+    fifteen.right   = twenty
 
 
     println("(")
-    reversePrint(root)
+    reversePrint(ten)
     println(")")
 
 

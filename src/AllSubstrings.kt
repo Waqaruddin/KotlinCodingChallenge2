@@ -6,7 +6,7 @@ fun main() {
     var str = "abc"
 
     for (i in 0 until str.length) {
-        for (j in i+1 until str.length) {
+        for (j in i + 1 until str.length) {
 
             println(str.substring(i, j))
         }
