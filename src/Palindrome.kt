@@ -1,11 +1,30 @@
+import java.util.*
+
 import java.lang.StringBuilder
 
-//How to check if a String and given number  is Palindrome?
+////How to check if a String and given number  is Palindrome?
+//
 
+
+//Palindrome without String builder
+fun palindrome() {
+    val original: String
+    var reverse = ""
+    val `in` = Scanner(System.`in`)
+    val length: Int
+    println("Enter the number or string")
+    original = `in`.nextLine()
+    length = original.length
+    for (i in length - 1 downTo 0) {
+        reverse += original[i]
+    }
+    println("reverse is: $reverse")
+    if (original == reverse) println("The number is palindrome") else println("The number is not a palindrome")
+}
 fun main() {
 
-    //String Palindrome
-    var str = "Madams"
+    //String Palindrome with String Builder
+    var str = "Madam"
     str = str.toLowerCase()
 
     var strBuilder = StringBuilder(str)
@@ -38,4 +57,6 @@ fun main() {
 
 
 }
+
+
 
