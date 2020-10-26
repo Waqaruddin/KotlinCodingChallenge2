@@ -11,7 +11,7 @@ fun main(){
     for(element in str){
         count[element] = count.getOrDefault(element,0) +1
     }
-    for (i in 0..str.length-1){
+    for (i in str.indices){
         if(count[str[i]] == 1){
             println(str[i])
         }
