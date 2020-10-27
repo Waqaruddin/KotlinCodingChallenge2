@@ -15,6 +15,12 @@ fun main() {
         }
     }
 
+    fun printFirstDistinct(){
+        val a = arrayOf("a", "a", "b", "c", "c")
+        val b = a.distinct()
+        println("First distinct element : ${b[0]}")
+    }
+
 
 
 //    for (i in arr.indices) {

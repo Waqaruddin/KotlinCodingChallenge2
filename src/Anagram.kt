@@ -7,7 +7,9 @@ import java.util.*
 //
 //
 //
-fun main(){
+fun main() {
+
+    checkStringsAnagram("abc", "ccc")
 
     var str1 = "abc"
     var str2 = "ccc"
@@ -18,29 +20,29 @@ fun main(){
     Arrays.sort(s1)
     Arrays.sort(s2)
 
-    if(Arrays.equals(s1,s2)){
+    if (s1.contentEquals(s2)) {
         println("Yes")
-    }else{
+    } else {
         println("No")
     }
 
 
-
 }
 
-//fun isAnagram(s: String, t: String): Boolean {
-//    if (s.length != t.length) {
-//        return false
-//    }
-//    val counter = IntArray(26)
-//    for (i in 0 until s.length) {
-//        counter[s[i] - 'a']++
-//        counter[t[i] - 'a']--
-//    }
-//    for (count in counter) {
-//        if (count != 0) {
-//            return false
-//        }
-//    }
-//    return true
-//}
+fun checkStringsAnagram(str1:String, str2:String):Boolean{
+    if(str1.length != str2.length){
+        println("Strings are not anagrams")
+        return false
+    }
+
+    var x = str1.toLowerCase().toCharArray().sorted().joinToString("")
+    var y = str2.toLowerCase().toCharArray().sorted().joinToString("")
+
+    if(x == y){
+        println("Strings are anagrams")
+        return true
+    }else{
+        println("Strings are not anagrams")
+        return false
+    }
+}
