@@ -13,5 +13,11 @@ fun main(){
     }
     println(output)
 
+    removeDuplicates("Hello")
 
+}
+
+fun removeDuplicates(str:String){
+    val newStr = str.toCharArray().distinct().toString()
+    println(newStr)
 }

@@ -3,6 +3,8 @@
 
 fun main() {
 
+    removeCharFromString("Hello", 'o')
+
     var str = "Hello"
 
     var output = ""
@@ -15,4 +17,9 @@ fun main() {
         }
     }
     println(output)
+}
+
+fun removeCharFromString(str:String, c:Char){
+    val newStr = str.replace(c.toString(), "")
+    println(newStr)
 }

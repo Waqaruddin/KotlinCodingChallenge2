@@ -17,7 +17,14 @@ fun main() {
         println("No")
     }
 
+}
 
+fun checkSubString(str:String, subStr:String){
+    if(str.contains(subStr)){
+        println("Given string1 contains string2")
+    }else{
+        println("Given string1 does not contain string2")
+    }
 }
 
 

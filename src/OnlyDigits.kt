@@ -12,4 +12,13 @@ fun main() {
     }else{
         println("False")
     }
+
+    println(doesStringContainsOnlyDigits())
+}
+
+fun doesStringContainsOnlyDigits():Boolean{
+    var str = "1234a"
+    var regex = "[0-9]+"
+
+    return str.matches(regex.toRegex())
 }
