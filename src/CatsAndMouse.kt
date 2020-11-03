@@ -1,6 +1,6 @@
 import java.lang.Math.abs
 
-//
+// Which cat is closer to the mouse
 
 fun main(){
     catAndMouse(1,3,2)
