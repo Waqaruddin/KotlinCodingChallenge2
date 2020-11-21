@@ -4,7 +4,7 @@ import java.util.*
 fun main() {
 
     val year = 2004
-    var leap:Boolean
+
 
 //    if (year % 4 == 0) {
 //        if (year % 100 == 0) {

@@ -20,4 +20,7 @@ fun main(){
 fun removeDuplicates(str:String){
     val newStr = str.toCharArray().distinct().toString()
     println(newStr)
+
+    //println(str.toCharArray().toSet().joinToString(""))
+
 }
